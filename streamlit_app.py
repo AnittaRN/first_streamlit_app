@@ -39,7 +39,7 @@ try:
  if not fruit_choice:
   streamlit.error ("Please select a fruit to get the information.")
  else:
-  back_from_function = get_fruityvice_data(fruit_choice)
+  back_from_function = get_fruityvice_data(fruit choice)
   streamlit.dataframe (back_from_function)
    
 except URLError as e:
@@ -61,7 +61,7 @@ def get_fruit_load_list():
 if streamlit.button('Get Fruit Load List'):
  my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
  my_data_rows = get_fruit_load_list
- streamlit.dataframe(my_data_row)
+ streamlit.dataframe(my_data_rows)
 
 
 #Allow the end user to add a fruit to the list
